@@ -3,6 +3,9 @@ package net.augurnetwork.moshpitaddons;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.PluginManager;
 
+import net.augurnetwork.moshpitaddons.environment.DamageModifier;
+import net.augurnetwork.moshpitaddons.environment.EventCanceler;
+
 public class Register {
 
     private Plugin plugin;
@@ -20,5 +23,8 @@ public class Register {
 
     private void registerCommands() {}
 
-    private void registerEvents() {}
+    private void registerEvents() {
+        manager.registerEvents(new DamageModifier(), plugin);
+        manager.registerEvents(new EventCanceler(), plugin);
+    }
 }

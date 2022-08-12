@@ -1,0 +1,23 @@
+# =MoshpitAddons Configurations= #
+#----------------------------------#
+
+# Moshpit
+
+# Name of the Moshpit world.
+moshpit-world: "moshpit"
+
+# Cooridinates between which the region of spawn is defined [x1, y1, z1, x2, y2, z2].
+spawn-region: [75, -8, 84, 99, 9, 54]
+
+# Environment #
+
+# General environmental damage modifier (double). 
+modifier: 1.5
+
+# List of worlds where the damage modifier is not enabled.
+exempted-worlds: ["example_world", "example_world_1"]
+
+# List of damage events not modified by the general modifier.
+exempted-causes: [ENTITY_ATTACK, ENTITY_EXPLOSION]
+
+#----------------------------------#
