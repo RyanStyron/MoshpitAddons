@@ -1,0 +1,4 @@
+name: MoshpitAddons
+main: net.augurnetwork.moshpitaddons.MoshpitAddons
+version: 0.1
+api-version: 1.19
